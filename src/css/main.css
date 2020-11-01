@@ -1,0 +1,86 @@
+/*
+页面样式
+*/
+
+/* =========
+   基本默认值
+=========== */
+
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+
+::selection{ /*文字选中时的样式*/
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* =========
+   工具样式
+=========== */
+
+.center-block{ /*在父元素中居中显示*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.pull-left{
+    float: left !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.hide { /*隐藏元素，并将元素的空间隐藏*/
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+.invisible{ /*隐藏元素，不会将元素的空间隐藏*/
+    visibility: hidden;
+}
+
+.text-hide{ /*隐藏文本，为了满足seo方面的需求和便于网页阅读器等方面的需求*/
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after { /*清除浮动*/
+    content: ' ';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
