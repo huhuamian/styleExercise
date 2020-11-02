@@ -289,6 +289,44 @@ header .main ul li a.active {
     color: #999;
 }
 
+    /*最新公告*/
+.notice {
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.notice a {
+    float: left;
+    display: inline-block;
+    margin-left: 2rem;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.notice a:first-child {
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #000;
+}
+.notice a:last-child {
+    float: right;
+    margin-right: 3rem;
+    color: #ff9900;
+}
+
+.notice a:first-child:before {
+    content: '最新公告：\00a0\00a0';
+    color: #aaa;
+}
+
+
+
 
     /*网站底部导航*/
 footer {
