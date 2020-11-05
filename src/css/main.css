@@ -158,6 +158,27 @@ header .top ul li + li {
     margin-left: -3px;
 }
 
+@media only screen and (max-width: 50.0625em) { /* 媒体查询的级别比较高，它并不是html的子元素，所以他的换算不是1rem = 10px; 而是根据浏览器的默认值来换算的 1rem = 16px */
+    header .top ul li {
+        padding: 0 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50.0625em) {
+}
+
+@media only screen and (max-width: 30em) {
+    header .tel,
+    .top > ul li:nth-child(3),
+    .top > ul li:nth-child(4) {
+        display: none;
+    }
+}
+
+
+
+
 /*主导航样式*/
 
 header .main {
@@ -180,10 +201,9 @@ header .main ul li {
 
 }
 
-
 header .main ul li a {
     display: inline-block;
-    padding: 0 3rem;
+    padding: 0 2.5rem;
     line-height: 5.5rem;
     font-size: 1.6rem;
     font-weight: bold;
@@ -199,7 +219,45 @@ header .main ul li a.active {
     background-color: #f8f6f1;
 }
 
+@media only screen and (max-width: 50.0625em) {
+    header .main .brand {
+        float: none;
+        display: block;
+        padding: 0;
+        margin: 1.5rem auto .5rem;
+        text-align: center;
+    }
 
+    header .main ul {
+        text-align: center;
+    }
+
+    header .main ul li {
+        border: none;
+    }
+
+    header .main ul li a {
+        padding: 0 1.5rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 30em) {
+    header .main ul li {
+        line-height: 3rem;
+    }
+
+    header .main ul li:first-child {
+         display: none;
+    }
+
+    header .main ul li a {
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
+
+}
 
 
 
@@ -243,7 +301,6 @@ header .main ul li a.active {
     background-color: rgba(225,225,225,0.9);
     -webkit-box-shadow: 1px 2px 1px #333 inset;
     box-shadow: 1px 2px 1px #333 inset;
-
 }
 
 .trans-report {
@@ -257,6 +314,56 @@ header .main ul li a.active {
     color: #fff;
     background-color: #7c7365;
 }
+
+@media only screen and (max-width: 50em) {
+    .trans-data {
+        padding: 1rem .5rem;
+    }
+
+    .trans-data span {
+        font-size: 1.2rem;
+    }
+
+    .trans-data span.trans-money {
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+        letter-spacing: inherit;
+        box-shadow: none;
+        background: transparent;
+
+    }
+
+    .trans-report a {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 30em) {
+    .transaction {
+        padding: 0.5rem 0;
+    }
+
+    .trans-data {
+        float: none;
+        text-align: center;
+        padding: .2rem 1rem;
+    }
+
+    .container .trans-report {
+        float: none;
+        text-align: center;
+    }
+
+    .container .trans-report a {
+        padding: 0;
+        color: #ff9900;
+    }
+
+}
+
+
 
 /*滚动广告*/
 .ad {
@@ -302,6 +409,40 @@ header .main ul li a.active {
     padding: 0;
     color: #999;
 }
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
+    .feature .item h3,
+    .feature .item p {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature .item p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    .feature {
+        width: 96%;
+        margin: 1rem auto;
+    }
+
+    .feature .item {
+        display: block;
+        width: auto;
+    }
+
+    .feature .item + .item {
+        margin: 1rem 0 0;
+    }
+
+}
+
+
+
+
 
 /*最新公告*/
 .notice {
