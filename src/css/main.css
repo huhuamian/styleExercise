@@ -482,6 +482,42 @@ header .main ul li a.active {
     color: #aaa;
 }
 
+@media only screen and (min-width: 30.0625em) and (max-width: 50em) {
+    .notice a:last-child {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .notice a:first-child {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:30em) {
+    .notice {
+        width: 96%;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+    .notice a {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .notice a:first-child {
+        width: 70%;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .notice a:last-child {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .notice a span{
+        display: none;
+    }
+}
+
 
 /*产品列表*/
 .product {
